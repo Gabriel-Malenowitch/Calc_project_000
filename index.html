@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,500;0,700;1,700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div id="main">
+        <div id="description">
+            <div class="description_00">
+                Calculadora desenvolvida por:
+            </div>
+            <div class="line">
+        
+            </div>
+            <div class="description_01">
+                Gabriel Botelho Malenowitch
+            </div>
+        </div>
+        
+        <div id="containerCalc">
+            <div id="calc">
+                <div id="res"><span id="resSpan">0</span></div>
+                <div class="row _0">
+                    <div onclick="Buttons.clear()" class="button _C">C</div>
+                    <div onclick="Buttons.back()"class="button _backspace">&lt;</div>
+                    <div onclick="Buttons.divisor()" class="button _/">/</div>
+                    <div onclick="Buttons.x()" class="button _X">X</div>
+                </div>
+                <div class="row _1">
+                    <div onclick="Buttons.seven()" class="button _7">7</div>
+                    <div onclick="Buttons.eight()" class="button _8">8</div>
+                    <div onclick="Buttons.nine()" class="button _9">9</div>
+                    <div onclick="Buttons.minus()" class="button _-">-</div>
+                </div>
+                <div class="row _2">
+                    <div onclick="Buttons.four()" class="button _4">4</div>
+                    <div onclick="Buttons.five()" class="button _5">5</div>
+                    <div onclick="Buttons.six()" class="button _6">6</div>
+                    <div onclick="Buttons.sum()" class="button _+">+</div>
+                </div>
+                <div id="container">
+                    <div class="rowContainer">
+                        <div class="row _3">
+                            <div onclick="Buttons.one()" class="button _1">1</div>
+                            <div onclick="Buttons.two()" class="button _2">2</div>
+                            <div onclick="Buttons.tree()" class="button _3">3</div>
+                        </div>
+                        <div class="row _4">
+                            <div onclick="Buttons.zero()" class="button _0">0</div>
+                            <div onclick="Buttons.point()" class="button _point">.</div>
+                        </div>
+                    </div>
+                    <div onclick="Buttons.equals()" class="button _igual">=</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
