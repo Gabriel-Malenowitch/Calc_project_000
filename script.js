@@ -104,10 +104,11 @@ const Op = {
 
 const App = {
     editHTML(){
-        document.getElementById('resSpan').textContent = Number(showr).toFixed(2)
+        document.getElementById('resSpan').textContent = showr
     },
 
     reload(n){
+        res =  Number(res).toFixed(2)
         if(n == undefined){this.show()}
         this.editHTML()
         App.print()
