@@ -87,6 +87,7 @@ const Op = {
                         console.log("-")
                         break;
                 }
+                final = Number(final).toFixed(2)
             }
             catch{
                 logMyErrors(e);
@@ -108,7 +109,6 @@ const App = {
     },
 
     reload(n){
-        res =  Number(res).toFixed(2)
         if(n == undefined){this.show()}
         this.editHTML()
         App.print()
