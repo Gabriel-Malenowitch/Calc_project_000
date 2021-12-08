@@ -104,7 +104,7 @@ const Op = {
 
 const App = {
     editHTML(){
-        document.getElementById('resSpan').textContent = showr
+        document.getElementById('resSpan').textContent = Number(showr).toFixed(2)
     },
 
     reload(n){
